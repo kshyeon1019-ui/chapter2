@@ -253,7 +253,7 @@
 <script>
 // ════════════════════════════════════════════════════════
 //  ★ 여기에 Google Apps Script 배포 URL을 붙여넣으세요 ★
-const SHEET_URL = 'YOUR_APPS_SCRIPT_URL_HERE';
+const SHEET_URL = 'https://script.google.com/macros/s/AKfycbwwqWstCRaDBcfG_bWuKVDnssK41MxSwQhpUhYpgBjj1ejIaU3C1uQJHo9rPAwLVEdW/exec';
 // ════════════════════════════════════════════════════════
 
 const IDIOMS = [
@@ -430,7 +430,7 @@ function showResult(){
 
 function sendToSheet(){
   const ss=document.getElementById('send-status');
-  if(SHEET_URL==='YOUR_APPS_SCRIPT_URL_HERE'){
+  if(SHEET_URL==='https://script.google.com/macros/s/AKfycbwwqWstCRaDBcfG_bWuKVDnssK41MxSwQhpUhYpgBjj1ejIaU3C1uQJHo9rPAwLVEdW/exec'){
     ss.className='send-status fail';
     ss.textContent='⚠ 구글 시트 URL이 아직 설정되지 않았습니다. (교사 설정 필요)';
     return;
